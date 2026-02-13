@@ -7,6 +7,7 @@ resources:
         - task_key: demo_task
           spark_python_task:
             python_file: ../src/main.py
+          job_cluster_key: demo_cluster
 
       job_clusters:
         - job_cluster_key: demo_cluster
