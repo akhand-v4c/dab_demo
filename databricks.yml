@@ -5,3 +5,6 @@ targets:
   dev:
     workspace:
       host: https://dbc-7954e5ec-2fc1.cloud.databricks.com/
+
+include:
+  - resources/*.yml
