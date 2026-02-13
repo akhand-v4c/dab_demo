@@ -14,7 +14,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Databricks CLI
-        run: pip install databricks-cli
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
 
       - name: Validate bundle
         run: databricks bundle validate
+        env:
+          DATABRICKS_HOST: $
+          {{secret.DATABRICKS_HOST}}
+          DATABRICKS_TOKEN: $
+          {{secret.DATABRICKS_TOKEN}}
