@@ -1,0 +1,9 @@
+resources:
+  jobs:
+    dab_demo_job:
+      name: demo-job
+
+      tasks:
+        - task_key: demo_task
+          spark_python_task:
+            python_file: ../src/main.py
