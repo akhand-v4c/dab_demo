@@ -1,0 +1,7 @@
+bundle:
+  name: dbx-demo
+
+targets:
+  dev:
+    workspace:
+      host: ${DATABRICKS_HOST}
