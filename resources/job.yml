@@ -1,15 +1,15 @@
-resources:
-  jobs:
-    dbx_demo_job:
-      name: dbx-demo-job
+# resources:
+#   jobs:
+#     dbx_demo_job:
+#       name: dbx-demo-job
 
-      tasks:
-        - task_key: demo_task
-          spark_python_task:
-            python_file: ../src/main.py
+#       tasks:
+#         - task_key: demo_task
+#           spark_python_task:
+#             python_file: ../src/main.py
 
-          environment_key: serverless_env
+#           environment_key: serverless_env
 
-      environments:
-        - environment_key: serverless_env
+#       environments:
+#         - environment_key: serverless_env
   
